@@ -3882,61 +3882,61 @@ var dart = [
       return $.get$_unknown();
     }
   },
-  closure1: {
+  closure9: {
     "^": "Closure:0;",
     call$0: function() {
       return F._matchVendor("Google");
     }
   },
-  closure2: {
+  closure10: {
     "^": "Closure:0;",
     call$0: function() {
       return new H.JSSyntaxRegExp("Chrome/(.*)\\s", H.JSSyntaxRegExp_makeNative("Chrome/(.*)\\s", false, true, false), null, null).firstMatch$1(window.navigator.appVersion);
     }
   },
-  closure9: {
+  closure7: {
     "^": "Closure:0;",
     call$0: function() {
       return F._matchVendor("Apple");
     }
   },
-  closure10: {
+  closure8: {
     "^": "Closure:0;",
     call$0: function() {
       return new H.JSSyntaxRegExp("Version/(.*)\\s", H.JSSyntaxRegExp_makeNative("Version/(.*)\\s", false, true, false), null, null).firstMatch$1(window.navigator.appVersion);
     }
   },
-  closure7: {
+  closure5: {
     "^": "Closure:0;",
     call$0: function() {
       return F._matchVendor("Opera");
     }
   },
-  closure8: {
+  closure6: {
     "^": "Closure:0;",
     call$0: function() {
       return new H.JSSyntaxRegExp("OPR/(.*)\\s", H.JSSyntaxRegExp_makeNative("OPR/(.*)\\s", false, true, false), null, null).firstMatch$1(window.navigator.appVersion);
     }
   },
-  closure3: {
+  closure1: {
     "^": "Closure:0;",
     call$0: function() {
       return J.contains$1$asx(window.navigator.appName, "Microsoft");
     }
   },
-  closure4: {
+  closure2: {
     "^": "Closure:0;",
     call$0: function() {
       return J.contains$1$asx(window.navigator.appVersion, "Trident");
     }
   },
-  closure5: {
+  closure3: {
     "^": "Closure:0;",
     call$0: function() {
       return new H.JSSyntaxRegExp("MSIE (.+?);", H.JSSyntaxRegExp_makeNative("MSIE (.+?);", false, true, false), null, null).firstMatch$1(window.navigator.appVersion);
     }
   },
-  closure6: {
+  closure4: {
     "^": "Closure:0;",
     call$0: function() {
       return new H.JSSyntaxRegExp("rv:(.*)\\)", H.JSSyntaxRegExp_makeNative("rv:(.*)\\)", false, true, false), null, null).firstMatch$1(window.navigator.appVersion);
@@ -3958,6 +3958,15 @@ var dart = [
     "^": "Object;name,_version,_vendorMatchers,_versionMatchers",
     get$isChrome: function() {
       return this === $.get$_chrome();
+    },
+    get$isSafari: function() {
+      return this === $.get$_safari();
+    },
+    get$isOpera: function() {
+      return this === $.get$_opera();
+    },
+    get$isIe: function() {
+      return this === $.get$_ie();
     },
     get$isFirefox: function() {
       return this === $.get$_firefox();
@@ -11770,13 +11779,13 @@ var dart = [
       this._gridView.addElement$1(this._messageBox.leftButton);
       t1._captured_score_0 = 1;
       t2 = this._timeUsed;
-      if (t2 < 30) {
+      if (t2 < this.firstGap) {
         t1._captured_score_0 = 3;
         t3 = this._messageBox.label;
-        t2 = "      Du klarte det p\u00e5 " + C.JSNumber_methods.toStringAsFixed$1(t2, 2) + " sekunder\n\n        Du fikk 2 ekstrapoeng\n      ";
+        t2 = "      Du klarte det p\u00e5 " + C.JSNumber_methods.toStringAsFixed$1(t2, 1) + " sekunder\n\n        Du fikk 2 ekstrapoeng\n      ";
         t3._text = t2;
         t3._splittedText = t2.split("\n");
-      } else if (t2 < 60) {
+      } else if (t2 < this.secondGap) {
         t1._captured_score_0 = 2;
         t3 = this._messageBox.label;
         t2 = "      Du klarte det p\u00e5 " + C.JSNumber_methods.toStringAsFixed$1(t2, 1) + " sekunder\n\n        Du fikk 1 ekstrapoeng\n      ";
@@ -11806,7 +11815,7 @@ var dart = [
     }],
     Level$1: function(container, _box_0) {
       var t1, button, t2, t3, t4, t5;
-      t1 = new G.Grid(0, 0, 1, 100, 100, 10, 20, 10, new X.Parser(X.Lexer$()), new X.Variable("x", null), new X.ContextModel(null, P.LinkedHashMap_LinkedHashMap(null, null, null, null, null), P.LinkedHashSet_LinkedHashSet(null, null, null, null)), null, H.setRuntimeTypeInfo([], [P.Point]), false, 0, true, false, false, false, null, null, 0, 0, 900, 600, null, false);
+      t1 = new G.Grid(0, 0, 1, 75, 75, 10, 20, 10, new X.Parser(X.Lexer$()), new X.Variable("x", null), new X.ContextModel(null, P.LinkedHashMap_LinkedHashMap(null, null, null, null, null), P.LinkedHashSet_LinkedHashSet(null, null, null, null)), null, H.setRuntimeTypeInfo([], [P.Point]), false, 0, true, false, false, false, null, null, 0, 0, 900, 525, null, false);
       t1.setPosition$2(0, 0);
       this._grid = t1;
       t1 = new G.Actor(null, new X.Parser(X.Lexer$()), new X.Variable("x", null), new X.ContextModel(null, P.LinkedHashMap_LinkedHashMap(null, null, null, null, null), P.LinkedHashSet_LinkedHashSet(null, null, null, null)), null, new X.Number(C.JSInt_methods.toDouble$0(0)), null, 0, t1, 1.5, 1.5, false, false, false, null, null, H.setRuntimeTypeInfo([], [P.Point]), 255, 255, 255, 0, 0, 0, 0, null, false);
@@ -11823,7 +11832,7 @@ var dart = [
       t1.colorR = 249;
       t1.colorG = 81;
       t1.colorB = 82;
-      t1 = G.View$(C.JSInt_methods._tdivFast$1(C.JSNumber_methods.round$0(document.body.clientWidth), 2) - 450, 20, 900, 600);
+      t1 = G.View$(C.JSInt_methods._tdivFast$1(C.JSNumber_methods.round$0(document.body.clientWidth), 2) - 450, 20, 900, 525);
       this._gridView = t1;
       t1.backgroundColorR = 58;
       t1.backgroundColorG = 58;
@@ -11985,7 +11994,7 @@ var dart = [
     }
   },
   Level1_1: {
-    "^": "Level;_label:Level1_1__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_label:Level1_1__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this.Level1_1__label;
@@ -12037,7 +12046,7 @@ var dart = [
       this._gridView.addElement$1(t2);
     },
     static: {Level1_1$: function(container) {
-        var t1 = new G.Level1_1(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level1_1(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level1_1$1(container);
         return t1;
@@ -12064,7 +12073,7 @@ var dart = [
     }
   },
   Level1_2: {
-    "^": "Level;_label:Level1_2__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_label:Level1_2__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this.Level1_2__label;
@@ -12117,7 +12126,7 @@ var dart = [
       this._gridView.addElement$1(t2);
     },
     static: {Level1_2$: function(container) {
-        var t1 = new G.Level1_2(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level1_2(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level1_2$1(container);
         return t1;
@@ -12144,7 +12153,7 @@ var dart = [
     }
   },
   Level1_3: {
-    "^": "Level;_label:Level1_3__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_label:Level1_3__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this.Level1_3__label;
@@ -12195,7 +12204,7 @@ var dart = [
       this._gridView.addElement$1(t2);
     },
     static: {Level1_3$: function(container) {
-        var t1 = new G.Level1_3(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level1_3(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level1_3$1(container);
         return t1;
@@ -12222,7 +12231,7 @@ var dart = [
     }
   },
   Level1_4: {
-    "^": "Level;_label:Level1_4__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_label:Level1_4__label@,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this.Level1_4__label;
@@ -12274,7 +12283,7 @@ var dart = [
       this._gridView.addElement$1(t2);
     },
     static: {Level1_4$: function(container) {
-        var t1 = new G.Level1_4(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level1_4(null, "Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level1_4$1(container);
         return t1;
@@ -12301,7 +12310,7 @@ var dart = [
     }
   },
   Level2_1: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12354,7 +12363,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_1$: function(container) {
-        var t1 = new G.Level2_1("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_1("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_1$1(container);
         return t1;
@@ -12381,7 +12390,7 @@ var dart = [
     }
   },
   Level2_2: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12433,7 +12442,7 @@ var dart = [
       this._gridView.addElement$1(this._label);
     },
     static: {Level2_2$: function(container) {
-        var t1 = new G.Level2_2("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_2("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_2$1(container);
         return t1;
@@ -12460,7 +12469,7 @@ var dart = [
     }
   },
   Level2_3: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12509,7 +12518,7 @@ var dart = [
       this._gridView.addElement$1(this._label);
     },
     static: {Level2_3$: function(container) {
-        var t1 = new G.Level2_3("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_3("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_3$1(container);
         return t1;
@@ -12536,7 +12545,7 @@ var dart = [
     }
   },
   Level2_4: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -12560,7 +12569,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_4$: function(container) {
-        var t1 = new G.Level2_4("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_4("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_4$1(container);
         return t1;
@@ -12587,7 +12596,7 @@ var dart = [
     }
   },
   Level2_5: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -12615,7 +12624,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_5$: function(container) {
-        var t1 = new G.Level2_5("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_5("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_5$1(container);
         return t1;
@@ -12642,7 +12651,7 @@ var dart = [
     }
   },
   Level2_6: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12688,7 +12697,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_6$: function(container) {
-        var t1 = new G.Level2_6("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_6("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_6$1(container);
         return t1;
@@ -12715,7 +12724,7 @@ var dart = [
     }
   },
   Level2_7: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12759,7 +12768,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_7$: function(container) {
-        var t1 = new G.Level2_7("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_7("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_7$1(container);
         return t1;
@@ -12786,7 +12795,7 @@ var dart = [
     }
   },
   Level2_8: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     draw$1: function(delta) {
       var t1, t2;
       t1 = this._label;
@@ -12845,7 +12854,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_8$: function(container) {
-        var t1 = new G.Level2_8("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_8("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_8$1(container);
         return t1;
@@ -12872,7 +12881,7 @@ var dart = [
     }
   },
   Level2_9: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -12909,7 +12918,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level2_9$: function(container) {
-        var t1 = new G.Level2_9("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level2_9("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level2_9$1(container);
         return t1;
@@ -12921,7 +12930,7 @@ var dart = [
       var t1, t2, t3, t4;
       t1 = this._pipi$_captured_this_0.container;
       t2 = H.setRuntimeTypeInfo([], [G.Obstacle]);
-      t3 = new G.Level2_10("Pipi", null, null, null, null, null, null, t2, false, null, null, null, "http://localhost:25565", 0, t1, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+      t3 = new G.Level2_10("Pipi", null, null, null, null, null, null, t2, false, null, null, null, 30, 60, "http://localhost:25565", 0, t1, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
       t3.Level$1(t1, {});
       t3._grid.setPositionLowerLeft$2(-1, -5);
       t4 = t3._goal;
@@ -12961,7 +12970,7 @@ var dart = [
     }
   },
   Level2_10: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -12992,7 +13001,7 @@ var dart = [
     }
   },
   Level3_1: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13017,7 +13026,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_1$: function(container) {
-        var t1 = new G.Level3_1("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_1("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_1$1(container);
         return t1;
@@ -13044,7 +13053,7 @@ var dart = [
     }
   },
   Level3_2: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13080,7 +13089,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_2$: function(container) {
-        var t1 = new G.Level3_2("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_2("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_2$1(container);
         return t1;
@@ -13107,7 +13116,7 @@ var dart = [
     }
   },
   Level3_3: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13140,7 +13149,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_3$: function(container) {
-        var t1 = new G.Level3_3("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_3("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_3$1(container);
         return t1;
@@ -13167,7 +13176,7 @@ var dart = [
     }
   },
   Level3_4: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13197,7 +13206,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_4$: function(container) {
-        var t1 = new G.Level3_4("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_4("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_4$1(container);
         return t1;
@@ -13224,7 +13233,7 @@ var dart = [
     }
   },
   Level3_5: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13249,7 +13258,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_5$: function(container) {
-        var t1 = new G.Level3_5("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_5("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_5$1(container);
         return t1;
@@ -13276,7 +13285,7 @@ var dart = [
     }
   },
   Level3_6: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13306,7 +13315,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_6$: function(container) {
-        var t1 = new G.Level3_6("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_6("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_6$1(container);
         return t1;
@@ -13333,7 +13342,7 @@ var dart = [
     }
   },
   Level3_7: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13363,7 +13372,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_7$: function(container) {
-        var t1 = new G.Level3_7("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_7("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_7$1(container);
         return t1;
@@ -13390,7 +13399,7 @@ var dart = [
     }
   },
   Level3_8: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13415,7 +13424,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_8$: function(container) {
-        var t1 = new G.Level3_8("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_8("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_8$1(container);
         return t1;
@@ -13442,7 +13451,7 @@ var dart = [
     }
   },
   Level3_9: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13467,7 +13476,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_9$: function(container) {
-        var t1 = new G.Level3_9("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_9("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_9$1(container);
         return t1;
@@ -13494,7 +13503,7 @@ var dart = [
     }
   },
   Level3_10: {
-    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "Level;_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       if (!this._showingMessageBox) {
         var t1 = this._messageBox;
@@ -13519,7 +13528,7 @@ var dart = [
       this._gridView.addElement$1(t1);
     },
     static: {Level3_10$: function(container) {
-        var t1 = new G.Level3_10("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
+        var t1 = new G.Level3_10("Pipi", null, null, null, null, null, null, H.setRuntimeTypeInfo([], [G.Obstacle]), false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, H.setRuntimeTypeInfo([], [G.View]), null);
         t1.Level$1(container, {});
         t1.Level3_10$1(container);
         return t1;
@@ -13546,7 +13555,7 @@ var dart = [
     }
   },
   Level4_1: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13593,8 +13602,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_1(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_1(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_1$1(container);
         return t2;
       }}
@@ -13620,7 +13630,7 @@ var dart = [
     }
   },
   Level4_2: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13656,8 +13666,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_2(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_2(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_2$1(container);
         return t2;
       }}
@@ -13683,7 +13694,7 @@ var dart = [
     }
   },
   Level4_3: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13719,8 +13730,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_3(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_3(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_3$1(container);
         return t2;
       }}
@@ -13746,7 +13758,7 @@ var dart = [
     }
   },
   Level4_4: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13782,8 +13794,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_4(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_4(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_4$1(container);
         return t2;
       }}
@@ -13809,7 +13822,7 @@ var dart = [
     }
   },
   Level4_5: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13845,8 +13858,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_5(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_5(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_5$1(container);
         return t2;
       }}
@@ -13872,7 +13886,7 @@ var dart = [
     }
   },
   Level4_6: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -13908,8 +13922,9 @@ var dart = [
         var t1, t2;
         t1 = H.setRuntimeTypeInfo([], [G.Obstacle]);
         t2 = H.setRuntimeTypeInfo([], [G.View]);
-        t2 = new G.Level4_6(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, "http://localhost:25565", 0, container, 0, 0, t2, null);
+        t2 = new G.Level4_6(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 3, 0, false, "Pipi", null, null, null, null, null, null, t1, false, null, null, null, 30, 60, "http://localhost:25565", 0, container, 0, 0, t2, null);
         t2.Level$1(container, {});
+        t2.MultipleSolutionLevel$2(container, 3);
         t2.Level4_6$1(container);
         return t2;
       }}
@@ -13921,8 +13936,9 @@ var dart = [
       t1 = this._pipi$_captured_this_0.container;
       t2 = H.setRuntimeTypeInfo([], [G.Obstacle]);
       t3 = H.setRuntimeTypeInfo([], [G.View]);
-      t3 = new G.Level4_7(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 5, 0, false, "Pipi", null, null, null, null, null, null, t2, false, null, null, null, "http://localhost:25565", 0, t1, 0, 0, t3, null);
+      t3 = new G.Level4_7(H.setRuntimeTypeInfo([], [G.Star]), H.setRuntimeTypeInfo([], [P.String]), [], 5, 0, false, "Pipi", null, null, null, null, null, null, t2, false, null, null, null, 30, 60, "http://localhost:25565", 0, t1, 0, 0, t3, null);
       t3.Level$1(t1, {});
+      t3.MultipleSolutionLevel$2(t1, 5);
       t2 = t3._grid;
       t2.lineDelta = 75;
       t2.setPositionLowerLeft$2(-1, -1);
@@ -13960,7 +13976,7 @@ var dart = [
     }
   },
   Level4_7: {
-    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,url,_timeUsed,container,_time,_delta,_views,focusView",
+    "^": "MultipleSolutionLevel;_stars,_solutions,_steps,_amountOfSolutions,_amountOfSolved,_addedStars,_pipi$_name,_grid,_gridView,_inputView,_textField,_actor,_goal,_obstacles,_showingMessageBox,_messageBox,_label,_scoreLabel,firstGap,secondGap,url,_timeUsed,container,_time,_delta,_views,focusView",
     _completedLevel$0: function() {
       this.super$MultipleSolutionLevel$_completedLevel$0();
       if (!this._showingMessageBox) {
@@ -14021,7 +14037,12 @@ var dart = [
   Menu: {
     "^": "Scene;container,_time,_delta,_views,focusView",
     Menu$1: function(container) {
-      var view, title, play;
+      var t1, view, title, play;
+      t1 = $.get$browser();
+      if (t1.get$isIe() || t1.get$isSafari() || t1.get$isOpera()) {
+        document.querySelector("#errorHeader").textContent = "Nettleseren st\u00f8ttes ikke. Bruk Chrome eller Firefox.";
+        return;
+      }
       view = G.View$(C.JSInt_methods._tdivFast$1(C.JSNumber_methods.round$0(document.body.clientWidth), 2) - 450, 20, 900, 600);
       view.backgroundColorR = 58;
       view.backgroundColorG = 58;
@@ -14144,7 +14165,11 @@ var dart = [
         }
       }
       this.super$Level$draw$1(delta);
-    }]
+    }],
+    MultipleSolutionLevel$2: function(container, solutions) {
+      this.firstGap = 60;
+      this.secondGap = 120;
+    }
   },
   View: {
     "^": "Object;x>,y>,width>,height>,parent,canvas,_context,_mouseX,_mouseY,_buttons,_keys,_elements,focusElement,drawBorder,isFrozen<,backgroundColorR,backgroundColorG,backgroundColorB,borderColoR,borderColorG,borderColorB",
@@ -15083,13 +15108,13 @@ $.EvaluationType__cache = null;
 }, "browser", "_browsers", "get$_browsers", function() {
   return [$.get$_chrome(), $.get$_safari(), $.get$_opera(), $.get$_ie(), $.get$_firefox()];
 }, "_browsers", "_chrome", "get$_chrome", function() {
-  return F.Browser$("Chrome", [new F.closure1()], [new F.closure2()]);
+  return F.Browser$("Chrome", [new F.closure9()], [new F.closure10()]);
 }, "_chrome", "_safari", "get$_safari", function() {
-  return F.Browser$("Safari", [new F.closure9()], [new F.closure10()]);
+  return F.Browser$("Safari", [new F.closure7()], [new F.closure8()]);
 }, "_safari", "_opera", "get$_opera", function() {
-  return F.Browser$("Opera", [new F.closure7()], [new F.closure8()]);
+  return F.Browser$("Opera", [new F.closure5()], [new F.closure6()]);
 }, "_opera", "_ie", "get$_ie", function() {
-  return F.Browser$("IE", [new F.closure3(), new F.closure4()], [new F.closure5(), new F.closure6()]);
+  return F.Browser$("IE", [new F.closure1(), new F.closure2()], [new F.closure3(), new F.closure4()]);
 }, "_ie", "_firefox", "get$_firefox", function() {
   return F.Browser$("Firefox", [new F.closure()], [new F.closure0()]);
 }, "_firefox", "_unknown", "get$_unknown", function() {

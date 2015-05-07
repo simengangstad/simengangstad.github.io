@@ -22,6 +22,8 @@ abstract class Level extends Scene {
 
   Label _label, _scoreLabel;
 
+  int firstGap = 30, secondGap = 60;
+
   /**
    * Server IP.
    */
@@ -34,7 +36,7 @@ abstract class Level extends Scene {
 
   Level(Container container) : super(container) {
 
-    _grid = new Grid(0.0, 0.0, 900.0, 600.0);
+    _grid = new Grid(0.0, 0.0, 900.0, 525.0);
 
     _actor = new Actor(_grid);
     _actor..colorR = 249
@@ -47,7 +49,7 @@ abstract class Level extends Scene {
          ..colorB = 82;
 
 
-    _gridView = new View(document.body.clientWidth ~/ 2.0 - 900 ~/ 2.0, 20, 900, 600);
+    _gridView = new View(document.body.clientWidth ~/ 2.0 - 900 ~/ 2.0, 20, 900, 525);
     _gridView..backgroundColorR = 58
              ..backgroundColorG = 58
              ..backgroundColorB = 58;
@@ -239,18 +241,18 @@ abstract class Level extends Scene {
 
     int score = 1;
 
-    if (_timeUsed < 30) {
+    if (_timeUsed < firstGap) {
 
       score += 2;
 
       _messageBox.label.text =
 
       """
-      Du klarte det på ${_timeUsed.toStringAsFixed(2)} sekunder\n
+      Du klarte det på ${_timeUsed.toStringAsFixed(1)} sekunder\n
         Du fikk 2 ekstrapoeng
       """;
     }
-    else if (_timeUsed < 60) {
+    else if (_timeUsed < secondGap) {
 
       score += 1;
 

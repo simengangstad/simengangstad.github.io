@@ -17,16 +17,21 @@
 - [x] Add more levels in general. Each level group should consist of at least 10 levels (except constant term).  
 - [x] Implement score.
 - [x] Make message box label a bit wider or lower the font.
-
-- [ ] Make compatible with the biggest browsers
+- [x] Update the website.
+- [x] Make height a little less?
+- [x] Test in IE. Doesn't work...
+- [x] Levels of grade 4 should have longer time for extra points (< 60 = 2, < 90 = 1, < 120 = 0).
+- [x] Make compatible with the biggest browsers. Just Chrome and Firefox for now.
     - [x] Safari - mouse movement.
     - [x] Chrome and Firefox - delete button goes to the previous page.
     - [ ] Safari - When entering wrong input and then entering right, it still thinks it's wrong. I don't find the reason for this. :(
-    - [ ] IE - ?
+    - [ ] Safari - Weird bug with the deleting of input -> Allows to only delete the last character.
+    - [ ] IE - Doesn't work...
     - [ ] Opera - ?
-    
-- [ ] Server port is open, but we can't access it globally. Hmm.
-- [ ] Test server side on school network.
-- [ ] Update the website.
+
+- [ ] In some instances you can't delete the input. It seems like this occurs when bringing another window to focus and then going back to the browser.
+- [ ] Server port is open, but we can't access it globally.
+- [ ] Test server side on school network. Doesn't work :/
+- [ ] Set up server communication with score and solution too (as well IP?).
 
 - [ ] Make grid zoomable with zooming determined by mid-points.

@@ -11,7 +11,11 @@ class MultipleSolutionLevel extends Level {
 
   bool _addedStars = false;
 
-  MultipleSolutionLevel(Container container, int solutions) : super(container), _stars = new List<Star>(), _solutions = new List<String>(), _amountOfSolutions = solutions;
+  MultipleSolutionLevel(Container container, int solutions) : super(container), _stars = new List<Star>(), _solutions = new List<String>(), _amountOfSolutions = solutions {
+
+    firstGap = 60;
+    secondGap = 120;
+  }
 
   @override
   void _completedLevel() {

@@ -6,9 +6,9 @@ class Grid extends Element {
 
   double zoom = 1.0;
 
-  final int _OriginalLineDelta = 100;
+  final int _OriginalLineDelta = 75;
 
-  int lineDelta = 100;
+  int lineDelta = 75;
 
   final int _delta = 10, _size = 20;
 

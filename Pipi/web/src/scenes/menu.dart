@@ -2,8 +2,14 @@ part of pipi;
 
 class Menu extends Scene {
 
-
   Menu(Container container) : super(container) {
+
+    if (browser.isIe || browser.isSafari || browser.isOpera) {
+
+      querySelector("#errorHeader").text = "Nettleseren støttes ikke. Bruk Chrome eller Firefox.";
+
+      return;
+    }
 
     View view = new View(document.body.clientWidth ~/ 2.0 - 900 ~/ 2.0, 20, 900, 600);
 
@@ -22,7 +28,6 @@ class Menu extends Scene {
          ..font = "bold 72px Trebuchet MS";
 
     view.addElement(title);
-
 
     Button play = new Button(900.0 / 2.0 - 150.0 / 2.0, 200.0, 150.0, 75.0, () {
 
