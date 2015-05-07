@@ -178,7 +178,7 @@ class Level3_5 extends Level {
 
     _grid.lineDelta = 75;
 
-    _grid.setPositionLowerLeft(-1.0, -7.0);
+    _grid.setPositionLowerLeft(-1.0, -6.0);
 
     _goal.x = 2.0;
     _goal.y = -6.0;
@@ -215,7 +215,7 @@ class Level3_6 extends Level {
 
     _grid.lineDelta = 75;
 
-    _grid.setPositionLowerLeft(-1.0, -7.0);
+    _grid.setPositionLowerLeft(-1.0, -6.0);
 
     _goal.x = 9.0;
     _goal.y = -3.0;

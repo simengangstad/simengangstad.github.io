@@ -172,7 +172,7 @@ class Level4_4 extends MultipleSolutionLevel {
 
     _grid.lineDelta = 75;
 
-    _grid.setPositionLowerLeft(-1.0, -7.0);
+    _grid.setPositionLowerLeft(-1.0, -6.0);
 
     _goal.x = 6.0;
     _goal.y = -6.0;
@@ -218,7 +218,7 @@ class Level4_5 extends MultipleSolutionLevel {
 
     _grid.lineDelta = 75;
 
-    _grid.setPositionLowerLeft(-1.0, -7.0);
+    _grid.setPositionLowerLeft(-1.0, -6.0);
 
     _goal.x = 6.0;
     _goal.y = -2.0;

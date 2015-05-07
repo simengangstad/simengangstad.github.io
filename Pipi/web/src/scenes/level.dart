@@ -25,11 +25,6 @@ abstract class Level extends Scene {
   int firstGap = 30, secondGap = 60;
 
   /**
-   * Server IP.
-   */
-  final String url = "http://localhost:25565";
-
-  /**
    * Used in statistics.
    */
   double _timeUsed = 0.0;
@@ -141,15 +136,21 @@ abstract class Level extends Scene {
       data["score"] = "0";
     }
 
-    _scoreLabel = new Label("Poeng: ${data["score"]}", 10.0, 10.0, 100.0, 25.0);
+    _scoreLabel = new Label("Poeng: ${data["score"]}", 10.0, 10.0, 100.0, 30.0);
 
     _scoreLabel..textR = 255
                ..textG = 255
                ..textB = 255
+               ..fillR = 58
+               ..fillG = 58
+               ..fillB = 58
+               ..borderR = 255
+               ..borderG = 255
+               ..borderB = 255
+               ..yOffset = 10.0
+               ..drawBorder = true
 
-               ..font = "bold 20px Trebuchet MS"
-
-               ..transparent = true;
+               ..font = "bold 20px Trebuchet MS";
 
     _gridView.addElement(_scoreLabel);
   }
@@ -297,7 +298,9 @@ abstract class Level extends Scene {
       print(error);
     }
 
-    HttpRequest.getString(url).then((String response) {
+    String currentScore = data["score"];
+
+    HttpRequest.getString(serverIP).then((String response) {
 
       HttpRequest request = new HttpRequest();
 
@@ -314,11 +317,11 @@ abstract class Level extends Scene {
 
       if (data[id.toString()] == null) {
 
-        data.putIfAbsent(id, () => {this.runtimeType.toString() : "$_timeUsed : $score"});
+        data.putIfAbsent(id, () => {this.runtimeType.toString() : "$_timeUsed - $currentScore - ${_grid._expression.simplify().toString()}"});
       }
       else {
 
-        data[id].putIfAbsent(this.runtimeType.toString(), () => "$_timeUsed : $score");
+        data[id].putIfAbsent(this.runtimeType.toString(), () => "$_timeUsed - $currentScore - ${_grid._expression.simplify().toString()}");
       }
 
       request.onReadyStateChange.listen((_) {
@@ -329,8 +332,9 @@ abstract class Level extends Scene {
         }
       }, onError: onError);
 
-      request.open("POST", url, async: false);
+      request.open("POST", serverIP, async: false);
       request.send("${JSON.encode(data)}");
+
     }, onError: onError);
   }
 }

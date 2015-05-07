@@ -4,14 +4,14 @@ class Menu extends Scene {
 
   Menu(Container container) : super(container) {
 
-    if (browser.isIe || browser.isSafari || browser.isOpera) {
+    if (!(browser.isChrome || browser.isFirefox)) {
 
       querySelector("#errorHeader").text = "Nettleseren støttes ikke. Bruk Chrome eller Firefox.";
 
       return;
     }
 
-    View view = new View(document.body.clientWidth ~/ 2.0 - 900 ~/ 2.0, 20, 900, 600);
+    View view = new View(document.body.clientWidth ~/ 2.0 - 900 ~/ 2.0, 20, 900, 525);
 
     view..backgroundColorR = 58
          ..backgroundColorG = 58

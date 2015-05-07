@@ -18,7 +18,7 @@ class Completed extends Scene {
     Pipi har nå husarrest slik at hun\n
     ikke roter seg bort så mye.\n
     \n
-    Poeng totalt: ${data["score"]}\n
+    Poeng totalt: ${data["score"]}/93\n
     """;
 
     Label title = new Label(text, 900.0 / 2.0 - 700.0 / 2.0, 100.0, 700.0, 100.0 * 5.0);

@@ -28,7 +28,7 @@ class Level1_1 extends Level {
     _goal.y = 1.0;
 
     _actor.x = 1.0;
-    _actor.y = 4.0;
+    _actor.y = 5.0;
 
     addObstacle(new Obstacle(_grid, _goal.x - 1.0, _goal.y - 0.5, 1.0, true));
 
@@ -44,9 +44,9 @@ class Level1_1 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 1.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 1.25 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
+    _label.x = 2.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 1.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
     _label.height = 25.0 * 6.0;
 
     _gridView.addElement(_label);
@@ -113,7 +113,7 @@ class Level1_2 extends Level {
 
     _label.text = text;
     _label.x = 2.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 4.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 4.375 * _grid.lineDelta / _grid.zoom;
     _label.width = 600.0;
     _label.height = 25.0 * 4.0;
     _label.ySpacing = 2.0;
@@ -183,10 +183,10 @@ class Level1_3 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 2.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 4.375 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
-    _label.height = 25.0 * 5.0;
+    _label.x = 2.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 4.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
+    _label.height = 25.0 * 6.0;
 
     _gridView.addElement(_label);
   }
@@ -255,10 +255,10 @@ class Level1_4 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 1.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 1.375 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
-    _label.height = 25.0 * 8.0;
+    _label.x = 2.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 1.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
+    _label.height = 25.0 * 9.0;
 
     _gridView.addElement(_label);
   }

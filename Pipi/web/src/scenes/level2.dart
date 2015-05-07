@@ -49,10 +49,10 @@ class Level2_1 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 3.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 3.25 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
-    _label.height = 25.0 * 10.0;
+    _label.x = 5.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 3.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
+    _label.height = 25.0 * 9.0;
 
     _gridView.addElement(_label);
   }
@@ -110,9 +110,9 @@ class Level2_2 extends Level {
     """;
 
     _label..text = text
-          ..x = 3.5 * _grid.lineDelta / _grid.zoom
-          ..y = 6.125 * _grid.lineDelta / _grid.zoom
-          ..width = 500.0
+          ..x = 5.0 * _grid.lineDelta / _grid.zoom
+          ..y = 7.0 * _grid.lineDelta / _grid.zoom
+          ..width = 525.0
           ..height = 25.0 * 3.0
           ..ySpacing = 5.0;
 
@@ -171,9 +171,9 @@ class Level2_3 extends Level {
     """;
 
     _label..text = text
-          ..x = 2.5 * _grid.lineDelta / _grid.zoom
-          ..y = 4.675 * _grid.lineDelta / _grid.zoom
-          ..width = 500.0
+          ..x = 3.0 * _grid.lineDelta / _grid.zoom
+          ..y = 5.0 * _grid.lineDelta / _grid.zoom
+          ..width = 525.0
           ..height = 25.0 * 3.0
           ..ySpacing = 5.0;
 
@@ -302,9 +302,9 @@ class Level2_6 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 2.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 4.75 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
+    _label.x = 3.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 5.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
     _label..height = 25.0 * 3.0
           ..ySpacing = 5.0;
 
@@ -361,10 +361,10 @@ class Level2_7 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 2.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 6.75 * _grid.lineDelta / _grid.zoom;
-    _label.width = 400.0;
-    _label.height = 25.0 * 2.0;
+    _label.x = 3.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 7.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 375.0;
+    _label.height = 25.0 * 3.0;
 
     _gridView.addElement(_label);
   }
@@ -424,9 +424,9 @@ class Level2_8 extends Level {
     """;
 
     _label.text = text;
-    _label.x = 0.5 * _grid.lineDelta / _grid.zoom;
-    _label.y = 1.75 * _grid.lineDelta / _grid.zoom;
-    _label.width = 500.0;
+    _label.x = 1.0 * _grid.lineDelta / _grid.zoom;
+    _label.y = 2.0 * _grid.lineDelta / _grid.zoom;
+    _label.width = 525.0;
     _label..height = 25.0 * 3.0
           ..ySpacing = 5.0;
 
