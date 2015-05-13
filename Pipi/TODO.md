@@ -2,6 +2,7 @@
 - [x] Make an input field for text.
 - [x] Implement a converter which converts the user input into function-graphs which display in the grid.
 - [x] Implement error when the user inputs wrong input.
+- [ ] Make grid zoomable with zooming determined by mid-points.
 - [x] Make everything a lib so that we don't have to import all the time.
 - [x] Implement a basic train which follows the function.
 - [x] Implement obstacles.
@@ -31,10 +32,10 @@
 - [x] Fix positions of labels.
 - [x] In some instances you can't delete the input. It seems like this occurs when bringing another window to focus and then going back to the browser.
       Solved by clicking on the input field.
-- [ ] Make grid zoomable with zooming determined by mid-points.
-      
 - [x] Server port is open, but we can't access it globally.
 - [x] Test server side on school network. Doesn't work :/
 - [x] Set up server communication with score and solution too (as well IP?).
-
-
+- [x] Server is not reliable with multiple user posting at the same time. Need to have an option to just send the data and the id and the server
+      will update the data.
+- [x] Adjust time so that you can read the text boxes.
+- [ ] Test server solution with many clients.

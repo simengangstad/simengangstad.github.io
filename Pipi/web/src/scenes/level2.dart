@@ -33,6 +33,9 @@ class Level2_1 extends Level {
     addObstacle(new Obstacle(_grid, 3.0, 2.5, 1.0, true));
     addObstacle(new Obstacle(_grid, 4.0, 3.5, 1.0, true));
 
+    firstGap = 60;
+    secondGap = 90;
+
     String text =
 
     """
@@ -102,6 +105,9 @@ class Level2_2 extends Level {
     addObstacle(new Obstacle(_grid, 3.0, -3.5, 1.0, true));
     addObstacle(new Obstacle(_grid, 4.0, -4.5, 1.0, true));
 
+    firstGap = 45;
+    secondGap = 75;
+
     String text =
 
     """
@@ -162,6 +168,9 @@ class Level2_3 extends Level {
 
     addObstacle(new Obstacle(_grid, 1.0, 1.5, 1.0, true));
     addObstacle(new Obstacle(_grid, 2.0, 2.5, 1.0, true));
+
+    firstGap = 45;
+    secondGap = 75;
 
     String text =
 
@@ -294,6 +303,9 @@ class Level2_6 extends Level {
 
     addObstacle(new Obstacle(_grid, 1.0, 1.5, 1.0, true));
 
+    firstGap = 60;
+    secondGap = 90;
+
     String text =
 
     """
@@ -353,6 +365,9 @@ class Level2_7 extends Level {
     _actor.y = 0.0;
 
     addObstacle(new Obstacle(_grid, 1.0, -2.5, 1.0, true));
+
+    firstGap = 45;
+    secondGap = 75;
 
     String text =
 
@@ -415,6 +430,9 @@ class Level2_8 extends Level {
     addObstacle(new Obstacle(_grid, 3.0, 1.25, 1.0, true));
     addObstacle(new Obstacle(_grid, 4.0, 1.75, 1.0, true));
     addObstacle(new Obstacle(_grid, 5.0, 2.25, 1.0, true));
+
+    firstGap = 45;
+    secondGap = 75;
 
     String text =
 

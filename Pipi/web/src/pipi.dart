@@ -37,6 +37,7 @@ final int ButtonID = 14;
 final int TextFieldID = 99;
 final int SpeedID = 55;
 
+//final String serverIP = "http://188.113.91.207:1337";
 final String serverIP = "http://188.113.91.207:1337";
 
 /**

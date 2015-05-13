@@ -298,43 +298,9 @@ abstract class Level extends Scene {
       print(error);
     }
 
-    String currentScore = data["score"];
+    HttpRequest request = new HttpRequest();
 
-    HttpRequest.getString(serverIP).then((String response) {
-
-      HttpRequest request = new HttpRequest();
-
-      Map<String, Map<String, String>> data;
-
-      if (response == "") {
-
-        data = new Map();
-      }
-      else {
-
-        data = JSON.decode(response);
-      }
-
-      if (data[id.toString()] == null) {
-
-        data.putIfAbsent(id, () => {this.runtimeType.toString() : "$_timeUsed - $currentScore - ${_grid._expression.simplify().toString()}"});
-      }
-      else {
-
-        data[id].putIfAbsent(this.runtimeType.toString(), () => "$_timeUsed - $currentScore - ${_grid._expression.simplify().toString()}");
-      }
-
-      request.onReadyStateChange.listen((_) {
-
-        if (request.readyState == HttpRequest.DONE && (request.status == 200 || request.status == 0)) {
-
-          print(request.responseText);
-        }
-      }, onError: onError);
-
-      request.open("POST", serverIP, async: false);
-      request.send("${JSON.encode(data)}");
-
-    }, onError: onError);
+    request.open("POST", serverIP, async: true);
+    request.send("$id,$runtimeType,$_timeUsed,${data["score"]},${_grid._expression.toString()}");
   }
 }
