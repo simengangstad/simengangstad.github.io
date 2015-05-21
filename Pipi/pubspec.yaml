@@ -1,8 +1,0 @@
-name: Pipi
-version: 0.0.1
-environment:
-  sdk: '>=1.0.0 <2.0.0'
-dependencies:
-  browser: any
-  browser_detect: any
-  math_expressions: any
