@@ -11,4 +11,4 @@ I'm a student from Norway whom enjoy programming and music. The languages closes
 
 The main focus of this site is to have a place where I can share my opinions, as well as my projects.
 
-You can also find me on <a href="http://twitter.com/simengangstad" target="_blank">Twitter</a>, though I'm not that active.
+You can also find me on <a href="http://twitter.com/simengangstad" target="_blank">Twitter</a>.
