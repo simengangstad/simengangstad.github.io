@@ -1,0 +1,9 @@
+
+http://simengangstad.github.io/atom.xml
+http://simengangstad.github.io/blog.html
+http://simengangstad.github.io/index.html
+http://simengangstad.github.io/projects.html
+http://simengangstad.github.io/rss.xml
+http://simengangstad.github.io/sitemap.txt
+
+http://simengangstad.github.io/2015/05/26/hello-world
