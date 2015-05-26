@@ -5884,7 +5884,7 @@ w="Poeng: "+H.d(z.p(0,"score"))
 y.f=w
 y.r=w.split("\n")
 v=new XMLHttpRequest()
-C.Dt.eo(v,"POST","http://188.113.91.207:1337",!0)
+C.Dt.eo(v,"POST","http://127.0.0.1",!0)
 v.send($.Ta()+","+H.d(new H.cu(H.dJ(this),null))+","+H.d(this.fy)+","+H.d(z.p(0,"score"))+","+J.Lz(this.f.fr))}],
 ZQ:function(a,b){var z,y,x,w,v,u
 z=new G.by(0,0,1,75,75,10,20,10,new X.FX(X.Pn()),new X.Mm("x",null),new X.Fb(null,P.L5(null,null,null,null,null),P.Ls(null,null,null,null)),null,H.J([],[P.hL]),!1,0,!0,!1,!1,!1,null,null,0,0,900,525,null,!1)
