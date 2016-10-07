@@ -1,14 +1,14 @@
 ---
 layout : page
-title : About
+title : Blog
 ---
+		
+{% for post in site.posts %}
 
-{% include JB/setup %}
+### **{{post.title}}** -- {{post.date | date_to_long_string}}
+{{post.content}}
 
-### **About**
+<!--			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>-->
+{% endfor %}
 
-I'm a student from Norway who enjoy programming and music. The languages closest to my heart are Java and Dart, but I'm very open to others. Games are the main focus of my programming, and I'm very fond of the game programming competition <a href="http://ludumdare.com/compo" target="_blank">Ludum Dare</a>. Music wise I play the guitar now and then.
 
-The main focus of this site is to have a place where I can share my opinions, as well as my projects.
-
-You can also find me on <a href="http://twitter.com/simengangstad" target="_blank">Twitter</a>.
