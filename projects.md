@@ -24,4 +24,4 @@ A game I made for the 29th Ludum Dare Compo (48 hours to make a game based on a 
 
 
 
-To follow my projects you can look at my <a href="http://github.com/simengangstad" target="_blank">Github</a>.
+To follow my projects you can head over to my <a href="http://github.com/simengangstad" target="_blank">Github</a>.
