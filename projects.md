@@ -6,17 +6,17 @@ title: "Projects"
 
 ### **Projects**
 
-<a href="http://simengangstad.github.io/arm-emulator" target="_blank"><i>ARM emulator</i></a>
+<a href="https://github.com/simengangstad/arm-emulator" target="_blank"><i>ARM emulator</i></a>
 <br>
-A simple ARM emulator written in Python for a project in AS-level Computer Science. The goal was to show the different stages of the fetch-decode-execute cycle. It was designed mainly for education; as a practical way to learn how the CPU works in a basic aspect. Please contact me if you decide to use this in your classroom or if you have any questions about the code. 
+A simple ARM emulator written in Python for a project in AS-level Computer Science. The goal was to show the different stages of the fetch-decode-execute cycle. It was designed mainly for education; as a practical way to learn how the CPU works in basic aspects. Please contact me if you decide to use this in your classroom or if you have any questions about the code.
 
-<a href="http://simengangstad.github.io/cpu" target="_blank"><i>CPU</i></a>
+<a href="https://github.com/simengangstad/cpu" target="_blank"><i>CPU</i></a>
 <br>
 A virtual CPU written in Java with it's own assembly language. It's quite flexible, but far from finished. The vision of this project was to create a terminal that could be used in a game (inspired by Notch's DCPU). I'd love if someone found use in this project as it has got some potential. Please contact me if you have questions about this project or if you use it in one our your own projects; I'm more than willing to help.
 
 <a href="http://simengangstad.github.io/pipi" target="_blank"><i>Pipi</i></a>
 <br>
-This is a game I made for my final project in Technology and Theory of Research (a school subject), written in Dart. The goal was to make a game which learned students mathematical functions. I later did some research with this game on 7th grade students and the result were quite good. Mind that this game has Norwegian text.
+This is a game I made for my final project in Technology and Theory of Research, written in Dart. The goal was to make a game which learned students mathematical functions. I later did some research with this game on 7th grade students and the result were quite good. Mind that this game has got Norwegian text.
 
 <a href="resources/LD29 - Return To The Surface.jar"><i>Return to the Surface</i></a>
 <br>
