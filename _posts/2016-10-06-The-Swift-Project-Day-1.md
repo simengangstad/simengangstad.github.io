@@ -8,7 +8,7 @@ tags: [swift, iOS]
 {% include JB/setup %}
 
 ##### Done
- Watched the first lecture.
+Watched the first lecture.
 
 
 ##### Reflections

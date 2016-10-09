@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "The Swift Project: Day 3”
+title: "The Swift Project: Day 3"
 description: ""
 category:
 tags: [swift, iOS]
 ---
+
 {% include JB/setup %}
 
 ##### Done
@@ -44,5 +45,4 @@ I've actually never used sets, because I haven't felt the need to.  They do appe
 
 
 
-I don't have time for any more reading today. The plan for tomorrow is to get through Dictionaries, Control Flow and Functions, as well as watching the next lecture. 
-
+I don't have time for any more reading today. The plan for tomorrow is to get through Dictionaries, Control Flow and Functions, as well as watching the next lecture.
