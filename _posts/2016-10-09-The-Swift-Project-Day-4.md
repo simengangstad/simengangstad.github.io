@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Swift Project: Day 3"
+title: "The Swift Project: Day 4"
 description: ""
 category:
 tags: [swift, iOS]
@@ -37,6 +37,7 @@ From Functions:
 
 
 *Dictionaries*
+
 Maybe I'm a bit conservative when it comes to Dictionaries, but I don't like the idea that `dictionary[key] = nil` removes the value associated with *key* from the dictionary. It's short, I'll give it that, but I think one rather should have to use `removeValue(forKey:)`. As I understand it so far nil is *just* for setting optionals to not set, and that makes sense. This, not so much. It makes it a bit funky when one has got an dictionary with an optional key or value:
 
 ```
@@ -48,6 +49,7 @@ dictionary["key"] = nil // Removes the value asociated with "key"
 ```
 
 *Switch*
+
 I actually love that you can chain multiple cases with this syntax `case 1, 2, 3:`. It's far safer than chaining multiple cases like this:
 
 ```
@@ -57,11 +59,12 @@ case 3:
 
 break;
 ```
-... As one can have the case where one forgets the break and it falls through. In Swift there is no break and a case can't be empty, so that problem doesn't occur. If one has to fall through, one can just use the fall through keyword. Elegant and concise.
+... As one can have the case where one forgets the break and it falls through. In Swift one doesn't have to break and a case can't be empty, so that problem doesn't occur. If one needs a case to fall through, one can just use the fall through keyword. Elegant and concise.
 
 
 *Functions*
-Functions and tuples in Swift are definitely one of my favourite parts so far. Returning tuples (and the fact that you can do tuple.nameOfVariable) is super useful for complex functions that I don't want to split into multiple ones, because they might all require the same arguments:
+
+Functions and tuples in Swift are definitely one of my favourite parts so far. Returning tuples – and the fact that you can do tuple.nameOfVariable – is super useful for complex functions that I don't want to split into multiple ones, because they might all require the same arguments:
 ```
 func life() -> (number: Int, string: String) {
 
