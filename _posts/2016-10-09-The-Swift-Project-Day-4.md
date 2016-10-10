@@ -38,7 +38,7 @@ From Functions:
 
 *Dictionaries*
 
-Maybe I'm a bit conservative when it comes to Dictionaries, but I don't like the idea that `dictionary[key] = nil` removes the value associated with *key* from the dictionary. It's short, I'll give it that, but I think one rather should have to use `removeValue(forKey:)`. As I understand it so far nil is *just* for setting optionals to not set, and that makes sense. This, not so much. It makes it a bit funky when one has got an dictionary with an optional key or value:
+Maybe I'm a bit conservative when it comes to dictionaries, but I don't like the idea that `dictionary[key] = nil` removes the value associated with *key* from the dictionary. It's short, I'll give it that, but I think one rather should have to use `removeValue(forKey:)`. As I understand it so far nil is *just* for setting optionals to not set, and that makes sense. This, not so much. It makes it a bit funky when one has got an dictionary with an optional key or value:
 
 ```
 var dictionary = [String: String?]()
