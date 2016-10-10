@@ -8,6 +8,10 @@ tags: [swift, iOS]
 
 {% include JB/setup %}
 
+{: .center}
+![The Calculator]({{ site.url }}/resources/calculator-day5.png)
+In the second lecture one builds the model for the calculator app.
+
 
 ##### Done
 
