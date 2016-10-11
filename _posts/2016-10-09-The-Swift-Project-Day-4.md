@@ -65,6 +65,7 @@ break;
 *Functions*
 
 Functions and tuples in Swift are definitely one of my favourite parts so far. Returning tuples – and the fact that you can do tuple.nameOfVariable – is super useful for complex functions that I don't want to split into multiple ones, because they might all require the same arguments:
+
 ```
 func life() -> (number: Int, string: String) {
 
