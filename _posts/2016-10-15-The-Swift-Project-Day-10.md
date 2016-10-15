@@ -11,6 +11,7 @@ tags: [swift, iOS]
 I've been on a holiday the last few days, so I'm sorry for the lack of updates.
 
 Due homework to the 13.10.16 and 15.10.16, respectively, was:
+
 * Reading Assignment 1
 * Programming Assignment 1
 
