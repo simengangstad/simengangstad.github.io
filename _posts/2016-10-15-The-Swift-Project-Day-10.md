@@ -11,20 +11,20 @@ tags: [swift, iOS]
 I've been on a holiday the last few days, so I'm sorry for the lack of updates.
 
 Due homework to the 13.10.16 and 15.10.16, respectively, was:
-* [ x ] Reading Assignment 1
-* [ x ] Programming Assignment 1
+* Reading Assignment 1
+* Programming Assignment 1
 
 Both of these got finished for the due date.
 
 Due for 20.10.16:
 
-* [   ] Reading Assignment 2
+* Reading Assignment 2
 
 Due for 22.10.16:
 
-* [   ] Programming Assignment 2
+* Programming Assignment 2
 
-##### done
+##### Done
 
 Watched the third lecture.
 
@@ -60,9 +60,10 @@ Functions:
 
 ##### Reflections
 
-The lecture goes through some basics in Swift and the foundation framework. Such as optionals, tuples, ranges, data structures
+The lecture goes through some basics in Swift and the foundation framework. Such as optionals, tuples, ranges, data structures, properties etc.
 
 *Optionals*
+
 Optionals do come with a lot of syntaxical sugar, for example:
 
 ```
@@ -74,14 +75,17 @@ If the optional .text is nil string will be set to the default value, which is a
 
 
 *Value types (structs and enums)*
+
 Must includes *mutating* for enums and structs before functions which mutate the contents.
 
 
 *Which data structure to use?*
+
 Structs tends to be used for fundamental types (vectors, rectangles, ints). Use enum every time you've got some discrete data.
 
 
 *Methods*
+
 Functions can have internal names and external names, which is quite neat:
 
 ```
@@ -98,17 +102,20 @@ foo(externalFirst: 1, externalSecond: 10)
 
 Underscore can also be used to make it possible to ignore the first external name of the function.
 
-**final** is used for preventing subclasses to override functions, properties or the whole class. **static** for type methods or properties, which is similar to Java syntax (for example Double.abs(var)).
+`final` is used for preventing subclasses to override functions, properties or the whole class. `static` for type methods or properties, which is similar to Java syntax (for example Double.abs(var)).
 
 
 *Properties*
-Observing changes to the property with **willSet** and **didSet** is so cool, awesome feature.
+
+Observing changes to the property with `willSet` and `didSet` is so cool, awesome feature.
 
 *Lazy initialisation*
-A property that doesn't get initialised until someone accesses it (one has to declare using the **lazy** keyword). This can be useful for loading big files which aren't needed at start up, but later has to be loaded into memory. With declaring the property as lazy one avoids the compiler complaining.
+
+A property that doesn't get initialised until someone accesses it (one has to declare using the `lazy` keyword). This can be useful for loading big files which aren't needed at start up, but later has to be loaded into memory.
 
 *Initialsation*
-I do like that within an **init** you can set let properties.
+
+I do like that within an `init` you can set let properties.
 
 
 
@@ -142,7 +149,7 @@ One of the things covered in the lecture was the ability to store calculator 'pr
 
 Notice the typealias, that forces you to set the program as a `PropertyList`, which is quite nice. When the program is set we do a simple check for Doubles and Strings and feed those into the `setOperand(operand: Double)` and `performOperation(symbol: String)`.
 
-I needed to adapt this to my operation stack as well, so the code became:
+I had to adapt this to my operation stack as well, so the code became:
 
 ```
     public struct PropertyList {
@@ -179,7 +186,7 @@ I needed to adapt this to my operation stack as well, so the code became:
     }
 ```
 
-Where my `PropertyList` is a struct instead and also stores the operation stack in the form of an array of `AnyObject`. I don't use a tuple in this instance because Swift guidelines advises you to use structs if the data persists longer than temporarily.
+Where my `PropertyList` is a struct instead and also stores the operation stack in the form of an array of `AnyObject`. I didn't use a tuple in this instance because Swift guidelines advises you to use structs if the data persists longer than temporarily.
 
 “Tuples are useful for temporary groups of related values. They are not suited to the creation of complex data structures. If your data structure is likely to persist beyond a temporary scope, model it as a class or structure, rather than as a tuple”
 
