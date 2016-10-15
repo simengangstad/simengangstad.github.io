@@ -147,4 +147,5 @@ Nothing too fancy going on here. I just replace the underscore for each operatio
 
 This was quite good practice. I struggled some with the stack views to get them aligned properly so the app would appear nicely when oriented to landscape, and to get the stack operation system functional. The app has got some minor bugs, but it doesn't really matter as the main focus with this is practicing Swift and getting used to the iOS way of doing things.
 
+
 The code is [here](https://github.com/simengangstad/The-Swift-Project)
