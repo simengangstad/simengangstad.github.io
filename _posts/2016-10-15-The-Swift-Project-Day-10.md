@@ -11,18 +11,18 @@ tags: [swift, iOS]
 I've been on a holiday the last few days, so I'm sorry for the lack of updates.
 
 Due homework to the 13.10.16 and 15.10.16, respectively, was:
-* [x] Reading Assignment 1
-* [x] Programming Assignment 1
+* [ x ] Reading Assignment 1
+* [ x ] Programming Assignment 1
 
 Both of these got finished for the due date.
 
 Due for 20.10.16:
 
-* [ ] Reading Assignment 2
+* [   ] Reading Assignment 2
 
 Due for 22.10.16:
 
-* [ ] Programming Assignment 2
+* [   ] Programming Assignment 2
 
 ##### done
 
@@ -114,7 +114,7 @@ I do like that within an **init** you can set let properties.
 
 *The continuation of the calculator*
 
-One of the things covered in the lecture was the ability to store calculator 'programs' which can be retrieved and passed to the calculator brain. For example one can store 3 * 4 / 3, which will output 4. Paul Hegarty solved this by storing an array of AnyObject which he appended for each operand set and operation performed, so [3, *, 4, /, 3]. This makes it highly flexible as one can just iterate through this array and get the same output.  This is the code he used to get and set the program (internal program is the array of AnyObjects):
+One of the things covered in the lecture was the ability to store calculator 'programs' which can be retrieved and passed to the calculator brain. For example one can store 3 x 4 / 3, which will output 4. Paul Hegarty solved this by storing an array of AnyObject which he appended for each operand set and operation performed, so [3, x, 4, /, 3]. This makes it highly flexible as one can just iterate through this array and get the same output.  This is the code he used to get and set the program (internal program is the array of AnyObjects):
 
 ```
     typealias PropertyList = AnyObject
@@ -177,7 +177,7 @@ I needed to adapt this to my operation stack as well, so the code became:
             }
         }
     }
-    ```
+```
 
 Where my `PropertyList` is a struct instead and also stores the operation stack in the form of an array of `AnyObject`. I don't use a tuple in this instance because Swift guidelines advises you to use structs if the data persists longer than temporarily.
 
