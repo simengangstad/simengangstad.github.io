@@ -114,7 +114,7 @@ Observing changes to the property with `willSet` and `didSet` is so cool, awesom
 
 A property that doesn't get initialised until someone accesses it (one has to declare using the `lazy` keyword). This can be useful for loading big files which aren't needed at start up, but later has to be loaded into memory.
 
-*Initialsation*
+*Initialisation*
 
 I do like that within an `init` you can set let properties.
 
@@ -192,3 +192,5 @@ Where my `PropertyList` is a struct instead and also stores the operation stack 
 “Tuples are useful for temporary groups of related values. They are not suited to the creation of complex data structures. If your data structure is likely to persist beyond a temporary scope, model it as a class or structure, rather than as a tuple”
 
 Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks.  
+
+The updated code can be found [here](https://github.com/simengangstad/The-Swift-Project)
