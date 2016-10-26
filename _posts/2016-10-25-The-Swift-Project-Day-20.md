@@ -104,4 +104,4 @@ Phew, so good to finally get that problem solved.
 
 Please have a look at the [code](https://github.com/simengangstad/The-Swift-Project) if you are unsure of anything.
 
-I'm quite behind schedule with the lectures, so I'll try to watch a few in the coming days. 
+I'm quite behind schedule with the lectures, so I'll try to watch a few in the coming days.
