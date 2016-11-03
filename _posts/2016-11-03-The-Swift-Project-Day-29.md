@@ -6,6 +6,8 @@ category:
 tags: [swift, iOS]
 ---
 
+![Cassini]({{ site.url }}/resources/cassini_day29.png)
+
 ##### Done
 
 Watched the eight lecture.
