@@ -193,4 +193,6 @@ Where my `PropertyList` is a struct instead and also stores the operation stack 
 
 Excerpt From: Apple Inc. “The Swift Programming Language (Swift 3).” iBooks.  
 
-The updated code can be found [here](https://github.com/simengangstad/The-Swift-Project)
+
+
+The updated code can be found <a href="https://github.com/simengangstad/The-Swift-Project" target="_blank">here</a>
