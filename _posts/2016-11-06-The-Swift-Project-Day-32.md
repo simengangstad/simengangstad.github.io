@@ -9,10 +9,12 @@ tags: [swift, iOS]
 
 I finished programming assignment 4 today. The twitter client is working as required in the assignment. I'm pleased with the code and how it's structured as it provides a good starting point for developing a fully fledged Twitter client.
 
-For the `TweetDetailTableViewController` (the one that appears when you click a tweet) I implemented a solution similar to the one in the calculator app for dealing with different types of associated content (aka. the different operations in the calculator app). The different types of content were images, hashtags, urls and users. hashtags, urls and users are all text based, so I didn't construct a custom `UITableViewCell` class for them; I used the existing one. For images I made the following class:
+For the `TweetDetailTableViewController` (the one that appears when you click a tweet) I implemented a solution similar to the one in the calculator app for dealing with different types of associated content (aka. the different operations in the calculator app). The different types of content were images, hashtags, urls and users. Hashtags, urls and users are all text based, so I didn't construct a custom `UITableViewCell` class for them; I used the existing one. For images I made the following class:
 
 ```
-@IBOutlet weak var mediaItemImageView: UIImageView!
+class MediaItemTableViewCell: UITableViewCell {
+
+  @IBOutlet weak var mediaItemImageView: UIImageView!
 
     var mediaItem : MediaItem? {
         didSet {
@@ -52,6 +54,7 @@ For the `TweetDetailTableViewController` (the one that appears when you click a 
             }
         }
     }
+}
 ```
 
 It fetches the image asynchronously and sets the image view bounds so the image fills it according to the aspect ratio.
