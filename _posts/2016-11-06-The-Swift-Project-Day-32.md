@@ -167,6 +167,6 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 }
 ```
 
-I found this assignment was easier than the last one. Nevertheless am I quite pleased with it; I managed to write a flexible data structure and kept the code clean and simple.
+I found this assignment easier than the last one. Nevertheless am I quite pleased with it; I managed to write a flexible data structure which kept the code clean and simple.
 
 The updated code is <a href="https://github.com/simengangstad/The-Swift-Project" target="_blank">here</a>
