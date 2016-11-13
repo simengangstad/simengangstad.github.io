@@ -97,4 +97,4 @@ if let mention = fetchedResultsController?.object(at: indexPath) as? MentionData
 
 Then retrieving the data for the given cell is a piece of cake.
 
-Very happy with the outcome of this assignment
+Very happy with the outcome of this assignment.
