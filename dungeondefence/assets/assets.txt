@@ -1,0 +1,375 @@
+d:assets:0:application/unknown
+b:.DS_Store:8196:application/unknown
+d:animations:0:application/unknown
+b:animations/.DS_Store:10244:application/unknown
+i:animations/CaterpillarAttacking.png:1496:image/png
+d:animations/CaterpillarAttacking.pxa:0:application/unknown
+b:animations/CaterpillarAttacking.pxa/0 (1).pxi:264037:application/unknown
+b:animations/CaterpillarAttacking.pxa/0.pxi:264037:application/unknown
+b:animations/CaterpillarAttacking.pxa/1 (1).pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/1.pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/2 (1).pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/2.pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/3 (1).pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/3.pxi:526416:application/unknown
+b:animations/CaterpillarAttacking.pxa/CelData (1).plist:414:application/unknown
+b:animations/CaterpillarAttacking.pxa/CelData.plist:414:application/unknown
+b:animations/CaterpillarAttacking.pxa/Settings (1).plist:221:application/unknown
+b:animations/CaterpillarAttacking.pxa/Settings.plist:221:application/unknown
+i:animations/CaterpillarMoving.png:1431:image/png
+d:animations/CaterpillarMoving.pxa:0:application/unknown
+b:animations/CaterpillarMoving.pxa/0 (1).pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/0.pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/1 (1).pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/1.pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/2 (1).pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/2.pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/3 (1).pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/3.pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/4 (1).pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/4.pxi:264037:application/unknown
+b:animations/CaterpillarMoving.pxa/CelData (1).plist:470:application/unknown
+b:animations/CaterpillarMoving.pxa/CelData.plist:470:application/unknown
+b:animations/CaterpillarMoving.pxa/Settings (1).plist:221:application/unknown
+b:animations/CaterpillarMoving.pxa/Settings.plist:221:application/unknown
+i:animations/CaterpillarStationary.png:1384:image/png
+d:animations/CaterpillarStationary.pxa:0:application/unknown
+b:animations/CaterpillarStationary.pxa/0 (1).pxi:264037:application/unknown
+b:animations/CaterpillarStationary.pxa/0.pxi:264037:application/unknown
+b:animations/CaterpillarStationary.pxa/1 (1).pxi:264037:application/unknown
+b:animations/CaterpillarStationary.pxa/1.pxi:264037:application/unknown
+b:animations/CaterpillarStationary.pxa/CelData (1).plist:302:application/unknown
+b:animations/CaterpillarStationary.pxa/CelData.plist:302:application/unknown
+b:animations/CaterpillarStationary.pxa/Settings (1).plist:221:application/unknown
+b:animations/CaterpillarStationary.pxa/Settings.plist:221:application/unknown
+i:animations/OrcMoving.png:1867:image/png
+d:animations/OrcMoving.pxa:0:application/unknown
+b:animations/OrcMoving.pxa/0.pxi:264037:application/unknown
+b:animations/OrcMoving.pxa/1.pxi:264037:application/unknown
+b:animations/OrcMoving.pxa/2.pxi:526416:application/unknown
+b:animations/OrcMoving.pxa/3.pxi:264037:application/unknown
+b:animations/OrcMoving.pxa/4.pxi:526416:application/unknown
+b:animations/OrcMoving.pxa/5.pxi:526416:application/unknown
+b:animations/OrcMoving.pxa/CelData.plist:526:application/unknown
+b:animations/OrcMoving.pxa/Settings.plist:221:application/unknown
+i:animations/OrcStationary.png:1764:image/png
+d:animations/OrcStationary.pxa:0:application/unknown
+b:animations/OrcStationary.pxa/0.pxi:264037:application/unknown
+b:animations/OrcStationary.pxa/1.pxi:264037:application/unknown
+b:animations/OrcStationary.pxa/2.pxi:264037:application/unknown
+b:animations/OrcStationary.pxa/3.pxi:264037:application/unknown
+b:animations/OrcStationary.pxa/CelData.plist:414:application/unknown
+b:animations/OrcStationary.pxa/Settings.plist:221:application/unknown
+i:animations/PlayerStationary.png:1786:image/png
+d:animations/PlayerStationary.pxa:0:application/unknown
+b:animations/PlayerStationary.pxa/0 (1).pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/0.pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/1 (1).pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/1.pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/2 (1).pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/2.pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/3 (1).pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/3.pxi:788773:application/unknown
+b:animations/PlayerStationary.pxa/CelData (1).plist:414:application/unknown
+b:animations/PlayerStationary.pxa/CelData.plist:414:application/unknown
+b:animations/PlayerStationary.pxa/Settings (1).plist:220:application/unknown
+b:animations/PlayerStationary.pxa/Settings.plist:220:application/unknown
+i:animations/PlayerWalking.png:1894:image/png
+d:animations/PlayerWalking.pxa:0:application/unknown
+b:animations/PlayerWalking.pxa/0.pxi:526410:application/unknown
+b:animations/PlayerWalking.pxa/1.pxi:526417:application/unknown
+b:animations/PlayerWalking.pxa/2.pxi:526410:application/unknown
+b:animations/PlayerWalking.pxa/3.pxi:526410:application/unknown
+b:animations/PlayerWalking.pxa/4.pxi:526410:application/unknown
+b:animations/PlayerWalking.pxa/5.pxi:526410:application/unknown
+b:animations/PlayerWalking.pxa/CelData.plist:526:application/unknown
+b:animations/PlayerWalking.pxa/Settings.plist:221:application/unknown
+i:animations/SnakeAttacking.png:3832:image/png
+d:animations/SnakeAttacking.pxa:0:application/unknown
+b:animations/SnakeAttacking.pxa/0 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/0.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/1 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/1.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/10 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/10.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/11 (1).pxi:263900:application/unknown
+b:animations/SnakeAttacking.pxa/11.pxi:263900:application/unknown
+b:animations/SnakeAttacking.pxa/12 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/12.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/13 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/13.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/14 (1).pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/14.pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/15 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/15.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/16 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/16.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/17 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/17.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/18 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/18.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/19 (1).pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/19.pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/2 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/2.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/20 (1).pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/20.pxi:526437:application/unknown
+b:animations/SnakeAttacking.pxa/3 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/3.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/4 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/4.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/5 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/5.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/6 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/6.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/7 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/7.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/8 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/8.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/9 (1).pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/9.pxi:264058:application/unknown
+b:animations/SnakeAttacking.pxa/CelData (1).plist:1366:application/unknown
+b:animations/SnakeAttacking.pxa/CelData.plist:1366:application/unknown
+b:animations/SnakeAttacking.pxa/Settings (1).plist:221:application/unknown
+b:animations/SnakeAttacking.pxa/Settings.plist:221:application/unknown
+i:animations/SnakeMoving.png:1881:image/png
+d:animations/SnakeMoving.pxa:0:application/unknown
+b:animations/SnakeMoving.pxa/0.pxi:264058:application/unknown
+b:animations/SnakeMoving.pxa/1.pxi:264058:application/unknown
+b:animations/SnakeMoving.pxa/2.pxi:264058:application/unknown
+b:animations/SnakeMoving.pxa/3.pxi:264058:application/unknown
+b:animations/SnakeMoving.pxa/CelData (1).plist:414:application/unknown
+b:animations/SnakeMoving.pxa/CelData.plist:414:application/unknown
+b:animations/SnakeMoving.pxa/Settings.plist:221:application/unknown
+i:animations/SnakeStationary.png:1902:image/png
+d:animations/SnakeStationary.pxa:0:application/unknown
+b:animations/SnakeStationary.pxa/0 (1).pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/0.pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/1 (1).pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/1.pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/2 (1).pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/2.pxi:264058:application/unknown
+b:animations/SnakeStationary.pxa/3 (1).pxi:526437:application/unknown
+b:animations/SnakeStationary.pxa/3.pxi:526437:application/unknown
+b:animations/SnakeStationary.pxa/CelData (1).plist:414:application/unknown
+b:animations/SnakeStationary.pxa/CelData.plist:414:application/unknown
+b:animations/SnakeStationary.pxa/Settings (1).plist:221:application/unknown
+b:animations/SnakeStationary.pxa/Settings.plist:221:application/unknown
+i:animations/Torch.png:1724:image/png
+d:animations/Torch.pxa:0:application/unknown
+b:animations/Torch.pxa/0.pxi:264037:application/unknown
+b:animations/Torch.pxa/1.pxi:264039:application/unknown
+b:animations/Torch.pxa/2.pxi:264037:application/unknown
+b:animations/Torch.pxa/3.pxi:264037:application/unknown
+b:animations/Torch.pxa/4.pxi:264037:application/unknown
+b:animations/Torch.pxa/5.pxi:264037:application/unknown
+b:animations/Torch.pxa/6.pxi:264037:application/unknown
+b:animations/Torch.pxa/7.pxi:264037:application/unknown
+b:animations/Torch.pxa/8.pxi:264037:application/unknown
+b:animations/Torch.pxa/CelData.plist:694:application/unknown
+b:animations/Torch.pxa/Settings.plist:221:application/unknown
+d:gui:0:application/unknown
+b:gui/.DS_Store:6148:application/unknown
+t:gui/default.fnt:11628:application/unknown
+i:gui/default.png:26179:image/png
+t:gui/gothic_12.fnt:10928:application/unknown
+i:gui/gothic_12.png:13222:image/png
+t:gui/gothic_14.fnt:10928:application/unknown
+i:gui/gothic_14.png:13222:image/png
+t:gui/gothic_16.fnt:10928:application/unknown
+i:gui/gothic_16.png:17988:image/png
+t:gui/gothic_32.fnt:10928:application/unknown
+i:gui/gothic_32.png:36744:image/png
+t:gui/gothic_8.fnt:10926:application/unknown
+i:gui/gothic_8.png:8203:image/png
+t:gui/uiskin.atlas:3374:application/unknown
+t:gui/uiskin.json:3669:application/unknown
+i:gui/uiskin.png:28560:image/png
+d:images:0:application/unknown
+i:images/background.png:50547:image/png
+i:images/spritesheet.png:38731:image/png
+i:images/spritesheet_etc.png:3332:image/png
+d:music:0:application/unknown
+b:music/.DS_Store:6148:application/unknown
+d:music/Calm:0:application/unknown
+a:music/Calm/Homecoming.mp3:3050685:application/unknown
+a:music/Calm/Wood Elves.mp3:3357887:application/unknown
+d:music/High:0:application/unknown
+a:music/High/Battle Lines.mp3:2371303:application/unknown
+a:music/High/In Pursuit.mp3:2507349:application/unknown
+d:music/Normal:0:application/unknown
+b:music/Normal/.DS_Store:6148:application/unknown
+a:music/Normal/After The Fall.mp3:2655562:application/unknown
+a:music/Normal/Black Sapphire.mp3:2908996:application/unknown
+a:music/Normal/Chimera.mp3:928724:application/unknown
+d:music/Scary:0:application/unknown
+b:music/Scary/.DS_Store:6148:application/unknown
+a:music/Scary/Creepy Hollow.mp3:3640007:application/unknown
+a:music/Scary/Electro Zombies.mp3:3508977:application/unknown
+a:music/Scary/In Doubt.mp3:2317166:application/unknown
+a:music/Scary/Outcast.mp3:3438496:application/unknown
+a:music/Scary/Prairie Dogs.mp3:2273966:application/unknown
+d:sfx:0:application/unknown
+b:sfx/.DS_Store:6148:application/unknown
+a:sfx/axe-hit.wav:368448:audio/x-wav
+a:sfx/axe-swing.mp3:3761:application/unknown
+a:sfx/axe-swing.ogg:7902:application/unknown
+a:sfx/axe-swing.wav:39758:audio/x-wav
+a:sfx/breaking.ogg:32538:application/unknown
+a:sfx/breaking.wav:305486:audio/x-wav
+a:sfx/burp.wav:128262:audio/x-wav
+a:sfx/craft.ogg:8439:application/unknown
+a:sfx/craft.wav:42318:audio/x-wav
+a:sfx/crossbow.wav:66176:audio/x-wav
+a:sfx/error.wav:54186:audio/x-wav
+a:sfx/explosion.wav:304684:audio/x-wav
+a:sfx/explosionTrimmed.wav:318728:audio/x-wav
+a:sfx/hiss.wav:56364:audio/x-wav
+a:sfx/NoArrow.ogg:7514:application/unknown
+a:sfx/NoArrow.wav:76110:audio/x-wav
+a:sfx/orc1.wav:360492:audio/x-wav
+a:sfx/orc2.wav:906108:audio/x-wav
+a:sfx/rocks.wav:97078:audio/x-wav
+d:sfx/rpg:0:application/unknown
+b:sfx/rpg/.DS_Store:10244:application/unknown
+d:sfx/rpg/battle:0:application/unknown
+b:sfx/rpg/battle/.DS_Store:6148:application/unknown
+a:sfx/rpg/battle/magic1.wav:232576:audio/x-wav
+a:sfx/rpg/battle/spell.wav:861816:audio/x-wav
+a:sfx/rpg/battle/swing.wav:61462:audio/x-wav
+a:sfx/rpg/battle/swing2.wav:39384:audio/x-wav
+a:sfx/rpg/battle/swing3.wav:37316:audio/x-wav
+a:sfx/rpg/battle/sword-unsheathe.wav:156950:audio/x-wav
+a:sfx/rpg/battle/sword-unsheathe2.wav:107086:audio/x-wav
+a:sfx/rpg/battle/sword-unsheathe3.wav:148990:audio/x-wav
+a:sfx/rpg/battle/sword-unsheathe4.wav:138926:audio/x-wav
+a:sfx/rpg/battle/sword-unsheathe5.wav:123006:audio/x-wav
+d:sfx/rpg/interface:0:application/unknown
+b:sfx/rpg/interface/.DS_Store:6148:application/unknown
+a:sfx/rpg/interface/interface1.wav:50150:audio/x-wav
+a:sfx/rpg/interface/interface2.wav:119004:audio/x-wav
+a:sfx/rpg/interface/interface3.wav:119010:audio/x-wav
+a:sfx/rpg/interface/interface4.wav:72414:audio/x-wav
+a:sfx/rpg/interface/interface5.wav:72326:audio/x-wav
+a:sfx/rpg/interface/interface6.wav:88434:audio/x-wav
+d:sfx/rpg/inventory:0:application/unknown
+b:sfx/rpg/inventory/.DS_Store:6148:application/unknown
+a:sfx/rpg/inventory/armor-light.wav:88434:audio/x-wav
+a:sfx/rpg/inventory/beads.wav:88434:audio/x-wav
+a:sfx/rpg/inventory/bottle.ogg:10775:application/unknown
+a:sfx/rpg/inventory/bottle.wav:127698:audio/x-wav
+a:sfx/rpg/inventory/bubble.wav:121630:audio/x-wav
+a:sfx/rpg/inventory/bubble2.wav:116662:audio/x-wav
+a:sfx/rpg/inventory/bubble3.wav:193934:audio/x-wav
+a:sfx/rpg/inventory/chainmail1.wav:155298:audio/x-wav
+a:sfx/rpg/inventory/chainmail2.wav:199456:audio/x-wav
+a:sfx/rpg/inventory/cloth-heavy.wav:108792:audio/x-wav
+a:sfx/rpg/inventory/cloth.wav:132918:audio/x-wav
+a:sfx/rpg/inventory/coin.wav:174974:audio/x-wav
+a:sfx/rpg/inventory/coin2.wav:289122:audio/x-wav
+a:sfx/rpg/inventory/coin3.wav:89812:audio/x-wav
+a:sfx/rpg/inventory/metal-ringing.wav:149740:audio/x-wav
+a:sfx/rpg/inventory/metal-small2.wav:96422:audio/x-wav
+a:sfx/rpg/inventory/metal-small3.wav:132918:audio/x-wav
+a:sfx/rpg/inventory/wood-small.wav:83546:audio/x-wav
+a:sfx/rpg/metal-small1.wav:140536:audio/x-wav
+d:sfx/rpg/misc:0:application/unknown
+b:sfx/rpg/misc/.DS_Store:6148:application/unknown
+a:sfx/rpg/misc/burp.wav:349200:audio/x-wav
+a:sfx/rpg/misc/random1.wav:174594:audio/x-wav
+a:sfx/rpg/misc/random2.wav:120904:audio/x-wav
+a:sfx/rpg/misc/random3.wav:114896:audio/x-wav
+a:sfx/rpg/misc/random4.wav:199004:audio/x-wav
+a:sfx/rpg/misc/random5.wav:103000:audio/x-wav
+a:sfx/rpg/misc/random6.ogg:10394:application/unknown
+a:sfx/rpg/misc/random6.wav:133220:audio/x-wav
+d:sfx/rpg/NPC:0:application/unknown
+b:sfx/rpg/NPC/.DS_Store:21508:application/unknown
+d:sfx/rpg/NPC/beetle:0:application/unknown
+b:sfx/rpg/NPC/beetle/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/beetle/bite-small.wav:73804:audio/x-wav
+a:sfx/rpg/NPC/beetle/bite-small2.wav:101078:audio/x-wav
+a:sfx/rpg/NPC/beetle/bite-small3.wav:149290:audio/x-wav
+d:sfx/rpg/NPC/giant:0:application/unknown
+b:sfx/rpg/NPC/giant/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/giant/giant1.wav:186990:audio/x-wav
+a:sfx/rpg/NPC/giant/giant2.wav:267794:audio/x-wav
+a:sfx/rpg/NPC/giant/giant3.wav:180982:audio/x-wav
+a:sfx/rpg/NPC/giant/giant4.wav:156950:audio/x-wav
+a:sfx/rpg/NPC/giant/giant5.wav:205314:audio/x-wav
+d:sfx/rpg/NPC/gutteral beast:0:application/unknown
+b:sfx/rpg/NPC/gutteral beast/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/gutteral beast/mnstr1.wav:126912:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr10.wav:157702:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr11.wav:217028:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr12.wav:126912:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr13.wav:156800:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr14.wav:305042:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr15.wav:108888:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr2.wav:144934:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr3.wav:156950:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr4.wav:203510:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr5.wav:266292:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr6.wav:205012:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr7.wav:188040:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr8.wav:168966:audio/x-wav
+a:sfx/rpg/NPC/gutteral beast/mnstr9.wav:217780:audio/x-wav
+d:sfx/rpg/NPC/misc:0:application/unknown
+b:sfx/rpg/NPC/misc/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/misc/wolfman.wav:120152:audio/x-wav
+d:sfx/rpg/NPC/ogre:0:application/unknown
+b:sfx/rpg/NPC/ogre/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/ogre/ogre1.wav:117148:audio/x-wav
+a:sfx/rpg/NPC/ogre/ogre2.wav:170468:audio/x-wav
+a:sfx/rpg/NPC/ogre/ogre3.wav:167614:audio/x-wav
+a:sfx/rpg/NPC/ogre/ogre4.wav:167464:audio/x-wav
+a:sfx/rpg/NPC/ogre/ogre5.wav:99426:audio/x-wav
+d:sfx/rpg/NPC/shade:0:application/unknown
+b:sfx/rpg/NPC/shade/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/shade/shade1.wav:153646:audio/x-wav
+a:sfx/rpg/NPC/shade/shade10.wav:292426:audio/x-wav
+a:sfx/rpg/NPC/shade/shade11.wav:325168:audio/x-wav
+a:sfx/rpg/NPC/shade/shade12.wav:379240:audio/x-wav
+a:sfx/rpg/NPC/shade/shade13.wav:331176:audio/x-wav
+a:sfx/rpg/NPC/shade/shade14.wav:162958:audio/x-wav
+a:sfx/rpg/NPC/shade/shade15.wav:186990:audio/x-wav
+a:sfx/rpg/NPC/shade/shade2.wav:159654:audio/x-wav
+a:sfx/rpg/NPC/shade/shade3.wav:172120:audio/x-wav
+a:sfx/rpg/NPC/shade/shade4.wav:193448:audio/x-wav
+a:sfx/rpg/NPC/shade/shade5.wav:192996:audio/x-wav
+a:sfx/rpg/NPC/shade/shade6.wav:316908:audio/x-wav
+a:sfx/rpg/NPC/shade/shade7.wav:358062:audio/x-wav
+a:sfx/rpg/NPC/shade/shade8.wav:472510:audio/x-wav
+a:sfx/rpg/NPC/shade/shade9.wav:451332:audio/x-wav
+d:sfx/rpg/NPC/slime:0:application/unknown
+b:sfx/rpg/NPC/slime/.DS_Store:6148:application/unknown
+a:sfx/rpg/NPC/slime/slime1.wav:49566:audio/x-wav
+a:sfx/rpg/NPC/slime/slime10.wav:61942:audio/x-wav
+a:sfx/rpg/NPC/slime/slime2.wav:55846:audio/x-wav
+a:sfx/rpg/NPC/slime/slime3.wav:44524:audio/x-wav
+a:sfx/rpg/NPC/slime/slime4.wav:49566:audio/x-wav
+a:sfx/rpg/NPC/slime/slime5.wav:49566:audio/x-wav
+a:sfx/rpg/NPC/slime/slime6.wav:74318:audio/x-wav
+a:sfx/rpg/NPC/slime/slime7.wav:61942:audio/x-wav
+a:sfx/rpg/NPC/slime/slime8.wav:99070:audio/x-wav
+a:sfx/rpg/NPC/slime/slime9.wav:86694:audio/x-wav
+d:sfx/rpg/world:0:application/unknown
+b:sfx/rpg/world/.DS_Store:6148:application/unknown
+a:sfx/rpg/world/door.wav:265692:audio/x-wav
+a:sfx/snake-bite.wav:114092:audio/x-wav
+a:sfx/snake-hiss.mp3:240432:application/unknown
+a:sfx/spitting.wav:168992:audio/x-wav
+a:sfx/throw.ogg:7463:application/unknown
+a:sfx/throw.wav:41294:audio/x-wav
+a:sfx/walking1.ogg:8505:application/unknown
+a:sfx/walking1.wav:47182:audio/x-wav
+a:sfx/walking2.ogg:8736:application/unknown
+a:sfx/walking2.wav:54606:audio/x-wav
+t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:770:application/unknown
+t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:2886:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5162:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:8824:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:869:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:2923:application/unknown
+t:com/badlogic/gdx/utils/arial-15.fnt:21743:application/unknown
+i:com/badlogic/gdx/utils/arial-15.png:21814:image/png

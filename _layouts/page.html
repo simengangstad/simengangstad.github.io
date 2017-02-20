@@ -9,6 +9,7 @@ layout: default
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{site.author.name}} - {{page.title}}</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="javascripts/scale.fix.js"></script>
@@ -21,11 +22,23 @@ layout: default
     <div class="wrapper">
       <header>
         <h1 class="header">Simen Gangstad</h1>
-        <i>Student, programmer, liberalist and tea lover situated in Norway</i>
+        <i>Student, programmer, social liberalist and tea lover situated in Norway</i>
         </p>
         <ul>
           <a href="index.html">{% if page.title == "Blog" %}<u>{% endif %}Blog{% if page.title == "Blog" %}</u>{% endif %}</a></br>
           <a href="projects.html">{% if page.title == "Projects" %}<u>{% endif %}Projects{% if page.title == "Projects" %}</u>{% endif %}</a></br>
+        </ul>
+        <ul>
+            <li>
+              <a href="https://github.com/{{ site.author.github }}">
+                <i class="fa fa-github"></i> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:{{ site.author.email | encode_email }}">
+                <i class="fa fa-envelope"></i> Email
+              </a>
+            </li>
         </ul>
       </header>
     <section>
