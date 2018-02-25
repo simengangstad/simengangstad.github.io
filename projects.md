@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: index
 title: "Projects"
 ---
 {% include JB/setup %}
 
 ### **Projects**
+
+<a href="https://github.com/simengangstad/SwiftyCloudKit" target="_blank"><i>SwiftyCloudKit</i></a>
+<br>
+A thin layer written on top of Cloud Kit in order to make it easy to add cloud kit capabilities to iOS, macOS, tvOS and watchOS apps. This library got written for a personal project late 2017, and proved itself quite useful for several other projects as well, so I decided upload it to Github for anyone’s use  (click the title to go to the Github page).
 
 <a href="resources/Dungeon Defence beta 002.jar" target="_blank"><i>Dungeon Defence (Beta)</i></a>
 <br>

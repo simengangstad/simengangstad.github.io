@@ -17,8 +17,9 @@ author :
   twitter : simengangstad
   feedburner : feedname
 
-gems:
+plugins:
 - jekyll-email-protect
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
