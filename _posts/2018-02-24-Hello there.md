@@ -2,7 +2,7 @@
 layout: post
 title: "Hello there"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -15,4 +15,4 @@ I’ve been doing some work in Swift and Cocoa Touch lately. Mainly I’ve been 
 
 I don’t think I’ll release this on the App Store though, as it’s just something I made for myself.
 
-The app’s model is based on cloud kit records and it uses a library I’ve been working on called [SwiftyCloudKit](https://github.com/simengangstad/SwiftyCloudKit). The library makes it quite easy to deal with fetching, uploading, deletion and changing records in the iCloud database. It’s also flexible and can handle subscriptions. 
+The app’s model is based on cloud kit records and it uses a library I’ve been working on called [SwiftyCloudKit](https://github.com/simengangstad/SwiftyCloudKit). The library makes it quite easy to deal with fetching, uploading, deletion and changing records in the iCloud database. It’s also flexible and can handle subscriptions.
