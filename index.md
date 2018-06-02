@@ -1,11 +1,8 @@
 ---
 layout : index
-title : Blog
+title : About
 ---
+{% include JB/setup %}
+{% include about.html %}
 
-{% for post in site.posts %}
-
-### **{{post.title}}** -- {{post.date | date_to_long_string}}
-{{post.content}}
-
-{% endfor %}
+I am a programmmer and tea lover situated in Norway. I spend my time exploring app and game development through Swift, Dart and Java. Check out my projects on the left pane and fork me on Github😌

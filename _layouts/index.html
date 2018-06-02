@@ -22,10 +22,9 @@ layout: default
     <div class="wrapper">
       <header>
         <h1 class="header">Simen Gangstad</h1>
-        <i>Programmer and tea lover situated in Norway</i>
         </p>
         <ul>
-          <a href="index.html">{% if page.title == "Blog" %}<u>{% endif %}Blog{% if page.title == "Blog" %}</u>{% endif %}</a></br>
+          <a href="index.html">{% if page.title == "About" %}<u>{% endif %}About{% if page.title == "About" %}</u>{% endif %}</a></br>
           <a href="projects.html">{% if page.title == "Projects" %}<u>{% endif %}Projects{% if page.title == "Projects" %}</u>{% endif %}</a></br>
         </ul>
         <ul>
@@ -44,11 +43,6 @@ layout: default
     <section>
     {{ content }}
     </section>
-      <footer>
-        <small>
-          <p font-family="Arvo",>Powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> and <a href="http://jekyllrb.com" target="_blank">Jekyll</a></p>
-        </small>
-      </footer>
     </div>
   </body>
 </html>
