@@ -22,7 +22,7 @@ recent entries are stored locally in order to decrease load time within the app.
 
 Moments has an authentication feature which relies on Apple's [Local Authentication API](https://developer.apple.com/documentation/localauthentication/lacontext). Thus, **your biometric data or passcode is ever exposed to Moments**. It's all handled internally on-device by Apple's API.
 
-For remote updates in-app between iCloud and your device, we store an encrypted server and change token on the device. This is
+For remote updates in-app between iCloud and your device, we store a server and change token on the device. This is
 only to make sure that Moments can update your local cache with the data in your personal iCloud.
 
 
@@ -57,4 +57,4 @@ If you have questions regarding this privacy policy, you may email <simen.gangst
 
 If we decide to change our privacy policy, we will post those changes on this page. Summary of changes so far:
 
-September 29, 2018: First published.
+September 30, 2018: First published.
