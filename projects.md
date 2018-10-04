@@ -6,19 +6,23 @@ title: "Projects"
 
 ### **Projects**
 
+<a href="https://itunes.apple.com/us/app/moments-journal/id1425517731?mt=8&ign-mpt=uo%3D2" target="_blank"><i>Moments</i></a>
+<br>
+An iOS app I made mostly for myself in order to capture small moments and things that made my day. After looking in the App Store and not finding the diary apps meeting the requirements I wanted, I started sketching the idea for Moments. I wanted something with an extremely simple interface which also provided a searchable timeline that could search by more complex date and text queries. I built it on top of <a href="https://github.com/simengangstad/SwiftyCloudKit" target="_blank"><i>SwiftyCloudKit</i></a> in order to have seamless sync with iCloud. Feel free to download it, I use it almost daily, and I'm really fond of what it turned out to be.
+
 <a href="https://github.com/simengangstad/SwiftyCloudKit" target="_blank"><i>SwiftyCloudKit</i></a>
 <br>
-A thin layer written on top of Cloud Kit in order to make it easy to add cloud kit capabilities to iOS and tvOS apps. This library got written for a personal project late 2017, and proved itself quite useful for several other projects as well, so I decided upload it to Github for anyone’s use  (click the title to go to the Github page).
+A thin layer written on top of Cloud Kit in order to make it easy to add cloud kit capabilities to iOS and tvOS apps. I used this library for seamless sync with iCloud in my app <a href="https://itunes.apple.com/us/app/moments-journal/id1425517731?mt=8&ign-mpt=uo%3D2" target="_blank"><i>Moments</i></a>.
 
-<a href="resources/Dungeon Defence beta 002.jar" target="_blank"><i>Dungeon Defence (Beta)</i></a>
+<a href="resources/Dungeon Defence beta 002.jar" target="_blank"><i>Dungeon Defence</i></a>
 <br>
-A roguelike survival game written in Java with libGDX where the objective is to explore a cave system, mine, craft items and fight off waves of enemies. I made this game during 2016 and it's one of the bigger games I've completed to a playable state. I've compiled the game for <a href="dungeondefence/" target="_blank">web</a>, but the desktop version (just click the title) is recommended as the web version is extremely slow (do keep in mind that this game is still in beta). The game is available as open source on my Github.
+A roguelike survival game written in Java with libGDX, where the objective is to explore a cave system, mine, craft items and fight off waves of enemies. I made this game during 2016 and it's one of the bigger games I've completed to a playable state. The game is available as open source on my <a href="https://github.com/simengangstad/Dungeon-Defence" target="_blank"><i>Github</i></a>.
 
 <a href="https://github.com/simengangstad/arm-emulator" target="_blank"><i>ARM emulator</i></a>
 <br>
 A simple ARM emulator written in Python for a project in AS-level Computer Science. The goal was to show the different stages of the fetch-decode-execute cycle. It was designed mainly for education, as a practical way to learn how the CPU works in basic aspects. Please contact me if you decide to use this in your classroom or if you have any questions about the code.
 
-<a href="https://github.com/simengangstad/cpu" target="_blank"><i>CPU</i></a>
+<a href="https://github.com/simengangstad/cpu" target="_blank"><i>Virtual CPU</i></a>
 <br>
 A virtual CPU written in Java with it's own assembly language. It's quite flexible, but far from finished. The vision of this project was to create a terminal that could be used in a game (inspired by Notch's DCPU). I'd love if someone found use in this project as it has got some potential. Please contact me if you have questions about this project or if you use it in one our your own projects; I'm more than willing to help.
 
