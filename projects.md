@@ -6,13 +6,13 @@ title: "Projects"
 
 ### **Projects**
 
-<a href="https://itunes.apple.com/us/app/moments-journal/id1425517731?mt=8&ign-mpt=uo%3D2" target="_blank"><i>Moments</i></a>
+<a href="https://github.com/AscendNTNU/fluid" target="_blank"><i>Fluid Finite State Machine</i></a>
 <br>
-An iOS app I made mostly for myself in order to capture small moments and things that made my day. After looking in the App Store and not finding the diary apps meeting the requirements I wanted, I started sketching the idea for Moments. I wanted something with an extremely simple interface which also provided a searchable timeline that could search by more complex date and text queries. I built it on top of <a href="https://github.com/simengangstad/SwiftyCloudKit" target="_blank"><i>SwiftyCloudKit</i></a> in order to have seamless sync with iCloud. Feel free to download it, I use it almost daily, and I'm really fond of what it turned out to be.
+A finite state machine I made for <a href="https://www.ascendntnu.no" target="_blank">Ascend NTNU</a> (NTNU's aerial robotics student team). It is built around PX4 and MAVROS for autonomous flight of drones with the Pixhawk flight controller. Each year, Ascend NTNU competes in complex drone autonomy competitions against other student teams. It was a thrill making this FSM and seeing it work in the competitions we participated in.
 
 <a href="https://github.com/simengangstad/SwiftyCloudKit" target="_blank"><i>SwiftyCloudKit</i></a>
 <br>
-A thin layer written on top of Cloud Kit in order to make it easy to add cloud kit capabilities to iOS and tvOS apps. I used this library for seamless sync with iCloud in my app <a href="https://itunes.apple.com/us/app/moments-journal/id1425517731?mt=8&ign-mpt=uo%3D2" target="_blank"><i>Moments</i></a>.
+A thin layer written on top of Cloud Kit in order to make it easy to add cloud kit capabilities to iOS and tvOS apps. 
 
 <a href="resources/Dungeon Defence beta 002.jar" target="_blank"><i>Dungeon Defence</i></a>
 <br>
